@@ -93,6 +93,34 @@ footer {
     position: relative;
 }
 
+
+.ullogo {
+    max-width: 200px;
+    height: auto;
+}
+
+.contact {
+    max-width: 200px;
+    height: auto;
+}
+
+.fencingireland {
+    max-width: 200px;
+    height: auto;
+}
+
+.ulwolfes {
+    max-width: 200px;
+    height: auto;
+}
+
+.fencinglogo {
+    max-width: 150px;
+    height: auto;
+}
+
+
+
 @media (max-width: 600px) {
     nav ul {
       position: relative;
