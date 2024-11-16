@@ -1,27 +1,149 @@
 <!DOCTYPE html>
 <html lang="en-ie">
 <head>
+    <meta charset="utf-8" />
+    <title>UL Fencing Contact Us Page</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="HTML_assignment_contact.css"> 
 </head>
-    <meta charset="utf-8" />
-    <title>UL Fencing - Contact us</title>
 <body>
     <header>
-        <h1>Contact Us</h1>
+        <a href="HTML_assignment_home.html"><img class="logo"  src = "logo.png" alt="UL Fencing Logo featuring a wolf with three different types of swords behind it."></a>
+        <nav>
+            <ul>
+                <li><a href="HTML_assignment_home.html"><img class="homeicon" src="homeicon.png" alt="homeicon">Home</a></li>
+                <li><a href="HTML_assignment_information.html"><img class="infoicon" src="infoicon.png" alt="infoicon">Information</a></li>
+                <li><a href="HTML_assignment_whatisfencing.html"><img class="swordicon" src="swordicon.png" alt="swordicon">What is fencing?</a></li>
+                <li><a href="HTML_assignment_about.html"><img class="questionicon" src="Icon-round-Question_mark.svg.png" alt="questionicon">About us</a></li>
+                <li><a href="HTML_assignment_contact.html"><img class="emailicon" src="emailicon.png" alt="emailicon">Contact us</a></li>                
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="HTML_assignment_home.html">Home</a></li>
-            <li><a href="HTML_assignment_information.html">Information</a></li>
-            <li><a href="HTML_assignment_whatisfencing.html">What is fencing?</a></li>
-            <li><a href="HTML_assignment_about.html">About us</a></li>
-            <li><a href="HTML_assignment_contact.html">Contact us</a></li>
-        </ul>
-    </nav>
-    <footer>
-        
-    </footer>
+    
+    <section id="main">
 
+        <div class="contactintro">
+            <h1>Contact Us</h1><br>
+
+            <p>If you would like to sign up for UL Fencing please enter your information the in our sign up form below.</p>
+            <div class="media">
+                <span class="username">Follow us on socail media! @ulfencingclub</span>
+                <img class="instagram" src="instagram.png" alt="Instagram">
+            </div>
+        </div><br>
+
+      
+
+    
+    <form class="signup" action="" method="post">
+        <h2>Sign up:</h2>
+
+        <label for="fname">First Name:</label>
+        <input text="text" id="fname" name="fname" required>
+
+        <label for="lname">Last Name:</label>
+        <input text="text" id="lname" name="lname" required>
+
+        <label for="emails">Email:</label>
+        <input text="email" id="emails" name="emails" required>
+
+        <label for="phones">Phone Number:</label>
+        <input text="tel" id="phones" name="phones" required>
+
+        <label for="student">Student Number:</label>
+        <input text="text" id="student" name="student" required>
+        
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+    </form><br>
+
+    <div class="membersintro">
+        <p>Questions or issues? Please use the Questions and complaints box and we will do our best to help you with any issue.</p>
+        <p>You can also contact any of our committee members. </p>
+    </div>
+        
+    <div class="committee-container">
+        <div class="committee-member">
+          <img src="jack.jpg" alt="Member 1" class="member-photo">
+          <h3>Captain:</h3>
+          <h3>Jack Griffith</h3>
+          <p><a href="mailto:john.doe@example.com">jack.griffith@gmail.com</a></p>
+        </div>
+        <div class="committee-member">
+          <img src="jackblack.jpg" alt="Member 2" class="member-photo">
+          <h3>Secretary:</h3>
+          <h3>Jack Black</h3>
+          <p><a href="mailto:jane.smith@example.com">jack.black@gmail.com</a></p>
+        </div>
+        <div class="committee-member">
+          <img src="jackmustache.jpg" alt="Member 3" class="member-photo">
+          <h3>Health and Safety:</h3>
+          <h3>Jack with mustache</h3>
+          <p><a href="mailto:emily.brown@example.com">jack.mustache@gmail.com</a></p>
+        </div>
+        <!-- Add more committee members as needed -->
+      </div>
+
+
+       
+    <form class="compquest" action="https://youtu.be/dQw4w9WgXcQ" method="get">
+        <h2>Questions and complaints:</h2>
+        <label for="name">First and Last name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="emailq">Email:</label>
+        <input type="email" id="emailq" name="emailq" required>
+
+        <label for="phoneq">Phone Number:</label>
+        <input type="tel" id="phoneq" name="phoneq" required>
+
+        <div class="flex-row">
+                <label for="issue">Issue:</label>
+                <select id="issue" name="issue" required>
+                    <option value="">Select issue</option>
+                    <option value="product">Staff Issue</option>
+                    <option value="service">Service Issue</option>
+                    <option value="billing">Billing Issue</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="contact">Contact via:</label>
+                <select id="contact" name="contact" required>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                </select>
+        </div>
+
+        <label for="description">Your question or complaint:</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+
+    </form>
+    </section>
+    
+    <footer>
+        <div class="footer-logo-section">
+            <img src="UL-logo.png" alt="UL Logo">
+            <ul class="footer-links">                    
+                <li><img src="fencing_ireland.png" alt="Fencing Ireland Logo"></li>
+                <li><h4>Fencing Ireland Insurance</h4></li>
+            </ul>
+            <img src="ul_wolfes.png" alt="UL Wolfes Logo">                
+            <img src="logo.png" alt="UL Fencing Logo">
+            <ul>
+                <li><a href="HTML_assignment_contact.html">Contact us</a></li>
+                <li>Email: ul.fencing@gmail.com</li>
+                <li>
+                    <div class="media">
+                        <span class="username">@ulfencingclub</span>
+                        <img class="instagram" src="instagram.png" alt="Instagram">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html

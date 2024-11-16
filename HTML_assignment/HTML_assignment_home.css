@@ -10,32 +10,73 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    
+    background-color: #c5d4c6;
     
   }
 
   header{
-    background-color: darkgreen;
-    padding: 10px;
-    font-size: 35px;
-    color: white;
+    background-color: #2c6325;
+    font-size: 20px;
     display: flex;
-    align-items: center;
     justify-content: space-between; /* Separates logo and title */
     width: 100%;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    max-width: 150px;
+    max-width: 90px;
     height: auto;
-    padding: 7px;
-    margin-left: 20px;
+    padding: 5px;
+    margin-left: 5px;
 }
 
-.header-title {
-    flex-grow: 1; /* Allows the title to expand and center itself */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    flex-grow: 1;
     text-align: center;
-    margin-right: 200px;
+}
+
+nav ul li a {
+    display: inline-flex; /* Align icon and text */
+    align-items: center; /* Center vertically */
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 17px;
+    gap: 8px; /* Adds space between icon and text */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+nav ul li a img {
+    width: 20px; /* Adjust icon size */
+    height: 20px; /* Keep consistent sizing */
+}
+
+nav ul li a:hover {
+    background-color: #b2edbc;
+    border-radius: 15px;
+}
+
+.homeicon, .infoicon, .swordicon, .questionicon, .emailicon {
+    width: 20px; /* Adjust all icon sizes */
+    height: 20px;
+}
+
+#main {
+    flex-grow: 1;
 }
 
 h1 {
@@ -43,82 +84,114 @@ h1 {
     text-align: center;
 }
 
-nav {
+.hero-section {
+    position: relative;
     width: 100%;
-    border-bottom: 1px black solid;
-    background-color: green;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul {
-    list-style-type:none;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}  
-    
-nav ul li {
-    flex-grow: 1;
-    text-align: center;
-}
-
-
-nav ul li a {
-    display: block;
-    padding: 10px 0;
-    text-decoration: none;
-    color: white;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Ensure no content spills out */
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default padding */
+  }
+  
+  .hero-image {
+    position: absolute; /* Make sure it covers the entire section */
+    top: 0;
+    left: 0;
+    width: 100%; /* Cover the entire width */
+    height: 100%; /* Cover the entire height */
+    object-fit: cover; /* Ensures the image covers the entire section without distortion */
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 20%; /* Adjust vertical alignment */
+    left: 10%; /* Adjust horizontal alignment */
+    color: white; /* Text color for contrast */
+    font-size: 3rem; /* Adjust text size */
     font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add a shadow for better visibility */
+    z-index: 2; /* Ensure text appears above the overlay */
 }
 
-nav ul li a:hover {
-    background-color: darkgreen;
-}
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    z-index: 1; /* Ensure it appears above the image but below the text */
+  }
 
-#main {
-    padding: 30px;
-    
-    flex-grow: 1;
+.introhome {
+    background-color: #ffffff; /* White box */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Spacing inside the box */
+    text-align: center; /* Center the text */
+    width: 90%; /* Dynamic width for responsiveness */
+    max-width: 1000px; /* Maximum width for larger screens */
+    margin: 20px auto; /* Center horizontally and add vertical margin */
+    display: flex; /* Enable flex for centering content */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items horizontally */
 }
 
 footer {
-    margin: 0; /* Ensures no additional spacing */
-    background-color: darkgreen;
-    color: white;
-    text-align: center;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
-    margin-top: auto;
-    position: relative;
+    background-color: rgb(15, 36, 20); /* Or your preferred background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
-.ullogo {
-    max-width: 200px;
-    height: auto;
+.footer-logo-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
-.contact {
-    max-width: 200px;
-    height: auto;
-}
-
-.fencingireland {
-    max-width: 200px;
-    height: auto;
-}
-
-.ulwolfes {
-    max-width: 200px;
-    height: auto;
-}
-
-.fencinglogo {
+.footer-logo-section img {
+    margin-right: 5%;  /* Space between images */
     max-width: 150px;
     height: auto;
+    transition: width 0.3s ease; /* Smooth resizing effect */
 }
 
+.footer-logo-section div {
+    max-width: 100px; /* Limit container size if needed */
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.media {
+    display: inline-flex;
+    align-items: center; /* Align text and icon vertically */
+    gap: 0; /* Add space between the text and the icon */
+  }
+  
+  .media .instagram {
+    width: 18px; /* Set the size of the icon */
+    height: 18px; /* Ensure it’s square */
+  }
+
+  .instagram {
+    max-width: 20px;
+    height: auto;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    color: white;
+}
 
 
 @media (max-width: 600px) {
@@ -136,5 +209,23 @@ footer {
     }
     h1 {
         margin: 10px 0;
+    }
+
+    .hero-text {
+        font-size: 2rem;
+      }
+
+    .footer-logo-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        text-align: center;
+    }
+
+    .footer-logo-section img {
+        margin-right: 0;
+        margin-bottom: 15px; /* Add space between images when in column layout */
     }
 } /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */

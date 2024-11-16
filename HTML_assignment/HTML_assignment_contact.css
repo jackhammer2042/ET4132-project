@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #c5d4c6;
+    
+    
+  }
+
+header{
+    background-color: #2c6325;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between; /* Separates logo and title */
+    width: 100%;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    max-width: 90px;
+    height: auto;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul li a {
+    display: inline-flex; /* Align icon and text */
+    align-items: center; /* Center vertically */
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    gap: 8px; /* Adds space between icon and text */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+nav ul li a img {
+    width: 20px; /* Adjust icon size */
+    height: 20px; /* Keep consistent sizing */
+}
+
+nav ul li a:hover {
+    background-color: #b2edbc;
+    border-radius: 15px;
+}
+
+.homeicon, .infoicon, .swordicon, .questionicon, .emailicon {
+    width: 20px; /* Adjust all icon sizes */
+    height: 20px;
+}
+
+#main {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack items vertically */
+    padding: 20px; /* Optional padding */
+}
+
+.contactintro {
+    background-color: #ffffff; /* White box */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Spacing inside the box */
+    text-align: center; /* Center the text */
+    width: 90%; /* Dynamic width for responsiveness */
+    max-width: 1000px; /* Maximum width for larger screens */
+    margin: 20px auto; /* Center horizontally and add vertical margin */
+    display: flex; /* Enable flex for centering content */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.membersintro {
+    background-color: #ffffff; /* White box */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Spacing inside the box */
+    text-align: center; /* Center the text */
+    width: 90%; /* Dynamic width for responsiveness */
+    max-width: 1000px; /* Maximum width for larger screens */
+    margin: 20px auto; /* Center horizontally and add vertical margin */
+    display: flex; /* Enable flex for centering content */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.media {
+    display: inline-flex;
+    align-items: center; /* Align text and icon vertically */
+    gap: 0; /* Add space between the text and the icon */
+  }
+  
+.media .instagram {
+    width: 18px; /* Set the size of the icon */
+    height: 18px; /* Ensure it’s square */
+  }
+
+.instagram {
+    max-width: 20px;
+    height: auto;
+}
+
+/* Container for the committee members */
+.committee-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures rows wrap to the next line on smaller screens */
+    gap: 20px; /* Space between each box */
+    justify-content: center; /* Center-align all members */
+    padding: 20px;
+  }
+  
+  /* Individual member box */
+.committee-member {
+    background-color: #ffffff; /* White box */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 15px;
+    text-align: center; /* Center the text */
+    width: 200px; /* Fixed width for each box */
+  }
+  
+  /* Member photo styling */
+.member-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: round photo corners */
+    margin-bottom: 10px; /* Space below the image */
+  }
+  
+  /* Member name styling */
+.committee-member h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px; /* Space around the name */
+  }
+  
+  /* Email styling */
+.committee-member p a {
+    font-size: 1rem;
+    color: #2c6325; /* Match theme color */
+    text-decoration: none;
+  }
+  
+.committee-member p a:hover {
+    text-decoration: underline;
+  }
+
+form.signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form.signup label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form.signup input,
+form.signup button {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+form.signup button {
+    background-color: #2c6325; /* Match header/nav color */
+    color: white;            /* White text for contrast */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form.signup button:hover {
+    background-color: #4caf50; /* Lighter green on hover */
+}
+
+form.compquest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center form vertically */
+    align-items: center;    /* Center form horizontally */
+    margin: auto;
+    width: 80%;             /* Adjust width for larger form */
+    max-width: 800px;       /* Prevent form from becoming too wide */
+    padding: 20px;          /* Add padding for inner spacing */
+    background-color: #ffffff; /* Different background for the form */
+    border-radius: 15px;    /* Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+form.compquest label {
+    margin: 10px 0 5px; /* Spacing between labels and fields */
+    font-weight: bold; /* Make labels stand out */
+}
+
+form.compquest input,
+form.compquest textarea,
+form.compquest select,
+form.compquest button {
+    width: 90%;             /* Inputs and buttons take most of the form's width */
+    margin: 10px 0;         /* Add spacing between form elements */
+    padding: 10px;          /* Inner spacing for inputs and buttons */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 5px;     /* Rounded corners for consistency */
+}
+
+/* Align Issue and Contact Method Fields */
+form.compquest .flex-row {
+    display: flex;
+    justify-content: space-between; /* Space between fields */
+    gap: 20px; /* Add space between the two fields */
+    width: 90%; /* Keep consistent width with other inputs */
+}
+form.compquest .flex-row select {
+    width: 35%; /* Make the dropdowns smaller to fit side by side */
+}
+
+form.compquest button {
+    background-color: #2c6325; /* Match header/nav color */
+    color: white;            /* White text for contrast */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form.compquest button:hover {
+    background-color: #4caf50; /* Lighter green on hover */
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(15, 36, 20); /* Or your preferred background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-logo-section {
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+}
+
+.footer-logo-section img {
+    margin-right: 5%;  /* Space between images */
+    max-width: 150px;
+    height: auto;
+}
+
+.footer-logo-section div {
+    max-width: 100px; /* Limit container size if needed */
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.media {
+    display: inline-flex;
+    align-items: center; /* Align text and icon vertically */
+    gap: 0; /* Add space between the text and the icon */
+  }
+  
+.media .instagram {
+    width: 18px; /* Set the size of the icon */
+    height: 18px; /* Ensure it’s square */
+  }
+
+.instagram {
+    max-width: 20px;
+    height: auto;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    color: white;
+}
+
+
+@media (max-width: 600px) {
+    nav ul {
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
+
+    .logo {
+        max-width: 100px;
+    }
+
+    header {
+        flex-direction: 0;
+        text-align: center;
+    }
+
+    h1 {
+        margin: 10px 0;
+        font-size: 1.8rem; /* Adjust heading size */
+    }
+
+    .contactintro {
+        width: 100%; /* Full-width for smaller screens */
+        padding: 15px; /* Slightly smaller padding */
+        margin: 10px auto; /* Adjust margins */
+    }
+
+    .committee-member {
+        width: 100%; /* Full-width boxes on smaller screens */
+      }
+    
+      .member-photo {
+        max-width: 80%; /* Scale down photo for smaller screens */
+      }
+
+    .footer-logo-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        text-align: center;
+    }
+
+    .footer-logo-section img {
+        margin-right: 0;
+        margin-bottom: 15px; /* Add space between images when in column layout */
+    }
+} /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
