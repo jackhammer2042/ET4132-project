@@ -2,9 +2,9 @@
 <html lang="en-ie">
 <head>
     <meta charset="utf-8" />
-    <title>UL Fencing What is Fencing? Page</title>
+    <title>UL Fencing Home Page</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="HTML_assignment_whatisfencing.css"> 
+    <link rel="stylesheet" href="HTML_assignment_home.css"> 
 </head>
 <body>
     <header>
@@ -21,24 +21,64 @@
     </header>
     
     <section id="main">
-        <div class="infofencing">
-            <h1>What is Fencing?</h1>
-            
-            <p>
-				Fencing is a 1v1 turn based combat sport, where both players aim to strike their opponent once with their chosen weapon!
-			</p>
-         
-			<h2>There is more then 1 sword?</h2>
+
+        <div class="hero-section">
+            <img src="fencing_homepage.jpg" alt="Background Image" class="hero-image">
+            <div class="hero-text">
+              <h1>Welcome to UL Fencing <br> The best armed club in UL!</h1>
+            </div>
+          </div>
+
+          <div class="introhome">
+            <p>UL Fencing is a club under the UL Wolfes clubs and societies. </p>
+            /*live counter here in the same box?*/
+			// table within nested php code to get display "Fun" stats
+			<?php
+				//give credntials to access  sql database 
+				$host = "localhost";
+				$user = "root";
+				//we don't care about security 
+				$pass = "";
+				$dbname = "fencingul";
+				
+						//connecting to database 
+						
+						$conn = new mysqli($host,$user,$pass,$dbname);
+							if($conn -> connect_error){
+								die("oops" . $conn->connect_error);
+								
+							} else 
+								//ensure connection
+										echo "work?";
+										
+					//making sql query					
+					$sql = "SELECT BrokenSword, MemberNUmber, Tournemts FROM funny";
+					
+					//execute query
+					$result = $conn->query($sql);
+					
+					if ($result && $result->num_rows > 0) {
+							
+					// Fetch the row
+					$row = $result->fetch_assoc();
+    
+					// Store values into PHP variables
+					$value1 = $row['BrokenSword'];
+					$value2 = $row['MemberNUmber'];
+					
+					echo "how many swords have I broken? $value1";
+					
+					} else {
+						
+						echo "not working!";
+					}
+					
+					
+			?>			
 			
-			<p>Yes fencing is split between 3 different disciplines, Saber(like star wars), Epee(Modern day Rapiers) and finally Foil, which is a sword truly unique to fencing</p>
 			
-			<h3>Whats the difference between the 3?</h3>
+          </div>
 			
-			<p>Each sword has it's own unique fighting style and ruleset! Saber is the weapon of choice at UL, Sabers are fast and aggressive. Matches are more based on fastfire reflexes mroe then strategy, In saber anywhere above the belt is fair game to score a Point.
-			<br><br> In Epee matches are long drawn out affairs, anywhere on the body counts as a viable place to score a point. Epee is the most strategic sword and the one with the most memes about it. <br><br> Foil is the first of the fencing swords invented 
-			and stands in the middle between the speed of the Saber and Strategy of the Epee. Foil aims for the chest or the neck and is unique where the other 2 swords have a rule where your feet can't cross the foil has no such rule making footwork a much bigger deal.
-			<br> The sword is also strict in how easy it is too loose your turn attacking An attack with foil is the most nerve wracking but also the most exciting!</p>
-                                
     </section>
     <footer>
         <div class="footer-logo-section">
