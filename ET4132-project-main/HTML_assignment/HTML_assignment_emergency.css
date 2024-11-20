@@ -77,100 +77,20 @@ nav ul li a:hover {
     height: 20px;
 }
 
-/* Main Content Section  */
+/* Main Conent Section  */
 #main {
-    display: flex; /* Flexbox for layout */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    flex-direction: column; /* Stack items vertically */
-    padding: 20px;
+    padding: 30px; /* Padding around main content */
+    flex-grow: 1; /* Allow main section to expand */
 }
 
-/* Introuction Section */
-.contactintro, .membersintro {
-    background-color: #ffffff;
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    padding: 20px; /* Spacing inside the box */
-    text-align: center; /* Center the text */
-    width: 90%; /* Dynamic width for responsiveness */
-    max-width: 1000px; /* Maximum width for larger screens */
-    margin: 20px auto; /* Center horizontally with vertical margin */
-    display: flex;
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center items horizontally */
-}
-
-/* Heading Styling */
 h1 {
     margin: 0; /* Remove margin */
     text-align: center;
     font-size: 50px;
 }
 
-h2 {
-    text-align: center; /* Center heading */
-}
-
-/* Media Section Styling */
-.media {
-    display: inline-flex; /* Flexbox for horizontal alignment */
-    align-items: center; /* Text and icon vertically */
-    gap: 0; /* Remove space between the text and the icon */
-  }
-  
-.media .instagramintro {
-    width: 18px; /* Icon width*/
-    height: 18px; /* Ensure it’s square */
-  }
-
-.instagramintro {
-    max-width: 20px; /* Restrict icon width */
-    height: auto; /* Maintain aspect ratio */
-}
-
-/* Committee Members Section */
-.committee-container {
-    display: flex; /* Flexbox for layout */
-    flex-wrap: wrap; /* Allows items wrap to the next row */
-    gap: 20px; /* Space between items */
-    justify-content: center; /* Center items */
-    padding: 20px;
-  }
-  
-.committee-member {
-    background-color: #ffffff;
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    padding: 15px;
-    text-align: center; /* Center text */
-    width: 200px; /* Fixed width for each box */
-  }
-  
-.member-photo {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px; /* Round photo corners */
-    margin-bottom: 10px; /* Space below the image */
-  }
-  
-.committee-member h3 {
-    font-size: 1.2rem;
-    margin: 10px 0 5px; /* Space around the name */
-  }
-  
-.committee-member p a {
-    font-size: 1rem;
-    color: #2c6325; /* Match theme color */
-    text-decoration: none; /* Remove underline */
-  }
-  
-.committee-member p a:hover {
-    text-decoration: underline; /* Underline on hover */
-  }
-
-  /* Form Styling */
-form.signup, form.compquest {
+ /* Form Styling */
+ form.emergencycontact {
     display: flex; /* Flexbox for layout */
     flex-direction: column; /* Items vertical */
     justify-content: center; /* Center conent horizontally */
@@ -182,20 +102,16 @@ form.signup, form.compquest {
     background-color: #ffffff;
     border-radius: 15px; /* Rounded corners */ 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center;
 }
 
-form.signup, 
-form.compquest label {
+form.emergencyconact label {
     margin: 10px 0 5px; /* Space above and below label */
     font-weight: bold;
 }
 
-form.signup input,
-form.signup button,
-form.compquest input,
-form.compquest textarea,
-form.compquest select,
-form.compquest button {
+form.emergencycontact input,
+form.emergencycontact button {
     width: 90%; /* Input and button take up most of the width */
     margin: 10px 0; /* Space between elements for readablility */
     padding: 10px; /* Inner spacing */
@@ -204,7 +120,7 @@ form.compquest button {
 
 }
 
-form.signup button {
+form.emergencycontact button {
     background-color: #2c6325;
     color: white;
     font-size: 16px;
@@ -212,30 +128,7 @@ form.signup button {
     transition: background-color 0.3s;
 }
 
-form.signup button:hover {
-    background-color: #4caf50; /* Lighter green on hover */
-}
-
-form.compquest .flex-row {
-    display: flex; /* Align fields horizontally */
-    justify-content: space-between; /* Space between fields */
-    gap: 20px; /* Ensures space between the two fields */
-    width: 90%; /* Keep consistent width with other inputs */
-}
-
-form.compquest .flex-row select {
-    width: 35%; /* Make the dropdowns smaller to fit side by side */
-}
-
-form.compquest button {
-    background-color: #2c6325;
-    color: white;
-    font-size: 16px;
-    cursor: pointer; /* Indicates button is clickable */
-    transition: background-color 0.3s;
-}
-
-form.compquest button:hover {
+form.siemergencycontact button:hover {
     background-color: #4caf50; /* Lighter green on hover */
 }
 
@@ -312,7 +205,7 @@ footer ul {
     text-decoration: underline;
 }
 
-@media (max-width: 800px) {
+  @media (max-width: 800px) {
     header {
         padding: 0px; /* Remove padding */
     }
@@ -322,6 +215,7 @@ footer ul {
     }
 }
 
+/* Responsive Styles */
 @media (max-width: 700px) {
     header {
         flex-direction: column;
@@ -342,21 +236,6 @@ footer ul {
     h1 {
         margin: 10px 0;
     }
-
-    .contactintro {
-        width: 100%; /* Full width */
-        padding: 15px; /* Slightly smaller padding */
-        margin: 10px auto; /* Adjust margins */
-    }
-
-    .committee-member {
-        width: 100%; 
-      }
-    
-    .member-photo {
-        max-width: 80%; /* Smaller width */
-      }
-
 
     footer {
         flex-direction: column; /* Stack items vertically */

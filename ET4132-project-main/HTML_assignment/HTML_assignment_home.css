@@ -235,6 +235,16 @@ footer ul {
     height: 18px; /* Keep it square */
   }
 
+.emergency {
+    font-size: 25px;
+    text-decoration: none;
+    color: #f79292
+}
+
+.emergency:hover {
+    text-decoration: underline;
+}
+
 /* Responsive Styles */
 @media (max-width: 800px) {
     header {
