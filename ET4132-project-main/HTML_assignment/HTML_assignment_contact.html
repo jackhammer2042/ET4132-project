@@ -25,7 +25,6 @@
     by a sign up form. The sign up form is again followed by a short description, and position, name and email, and pictures that link to the about us page of the committee members
     and also a questions and complaints form -->    
     <section id="main">
-
         <div class="contactintro">
             <h1>Contact Us</h1><br>
             <p>If you would like to sign up for UL Fencing please enter your information the in our sign up form below.</p>
@@ -35,117 +34,112 @@
             </div>
         </div><br>
 
-      
+        <form class="signup" action="" method="post">
+            <h2>Sign up:</h2>
 
-    
-    <form class="signup" action="" method="post">
-        <h2>Sign up:</h2>
+            <label for="fname">First Name:</label>
+            <input text="text" id="fname" name="fname" required tabindex="1" autofocus>
 
-        <label for="fname">First Name:</label>
-        <input text="text" id="fname" name="fname" required>
+            <label for="lname">Last Name:</label>
+            <input text="text" id="lname" name="lname" required tabindex="2">
 
-        <label for="lname">Last Name:</label>
-        <input text="text" id="lname" name="lname" required>
+            <label for="emails">Email:</label>
+            <input text="email" id="emails" name="emails" required tabindex="3">
 
-        <label for="emails">Email:</label>
-        <input text="email" id="emails" name="emails" required>
+            <label for="phones">Phone Number:</label>
+            <input text="tel" id="phones" name="phones" required tabindex="4">
 
-        <label for="phones">Phone Number:</label>
-        <input text="tel" id="phones" name="phones" required>
+            <label for="student">Student Number:</label>
+            <input text="text" id="student" name="student" required tabindex="5">
+            
+            <button type="submit" tabindex="6">Submit</button>
+            <button type="reset" tabindex="7">Clear</button>
+        </form><br>
 
-        <label for="student">Student Number:</label>
-        <input text="text" id="student" name="student" required>
-        
-        <button type="submit">Submit</button>
-        <button type="reset">Clear</button>
-    </form><br>
+        <div class="membersintro">
+            <p>Questions or issues? Please use the Questions and complaints box and we will do our best to help you with any issue.</p>
+            <p>You can also contact any of our committee members. </p>
+        </div>
+            
+        <div class="committee-container">
+            <div class="committee-member">
+                <a href="HTML_assignment_about.html"><img src="Images/jack.jpg" alt="Member 1" class="member-photo"></a>
+                <h3>Captain:</h3>
+                <h3>Jack Griffith</h3>
+                <p><a href="mailto:john.doe@example.com">jack.griffith@gmail.com</a></p>
+            </div>
 
-    <div class="membersintro">
-        <p>Questions or issues? Please use the Questions and complaints box and we will do our best to help you with any issue.</p>
-        <p>You can also contact any of our committee members. </p>
-    </div>
-        
-    <div class="committee-container">
-        <div class="committee-member">
-            <a href="HTML_assignment_about.html"><img src="Images/jack.jpg" alt="Member 1" class="member-photo"></a>
-            <h3>Captain:</h3>
-            <h3>Jack Griffith</h3>
-            <p><a href="mailto:john.doe@example.com">jack.griffith@gmail.com</a></p>
+            <div class="committee-member">
+                <a href="HTML_assignment_about.html"><img src="Images/jack_mustache.jpg" alt="Member 2" class="member-photo"></a>
+                <h3>Public Relations:</h3>
+                <h3>John Smith</h3>
+                <p><a href="mailto:emily.brown@example.com">john.smith@gmail.com</a></p>
+            </div>
+
+            <div class="committee-member">
+                <a href="HTML_assignment_about.html"><img src="Images/jack_french.jpg" alt="Member 3" class="member-photo"></a>
+                <h3>Secretary:</h3>
+                <h3>Emma Davis</h3>
+                <p><a href="mailto:jane.smith@example.com">emma.davis@gmail.com</a></p>
+            </div>
+
+            <div class="committee-member">
+                <a href="HTML_assignment_about.html"><img src="Images/jackblack.jpg" alt="Member 4" class="member-photo"></a>
+                <h3>Treasurer:</h3>
+                <h3>Liam Wilson</h3>
+                <p><a href="mailto:emily.brown@example.com">liam.wilson@gmail.com</a></p>
+            </div>
+
+            <div class="committee-member">
+                <a href="HTML_assignment_about.html"><img src="Images/jack_hat.jpg" alt="Member 5" class="member-photo"></a>
+                <h3>Event Coordinator:</h3>
+                <h3>Sophia Taylor</h3>
+                <p><a href="mailto:emily.brown@example.com">sophia.taylor@gmail.com</a></p>
+            </div>
+
+            <div class="committee-member">
+                <a href="HTML_assignment_about.html"><img src="Images/jack_santa.jpg" alt="Member 6" class="member-photo"></a>
+                <h3>Armorer:</h3>
+                <h3>Noah Johnson</h3>
+                <p><a href="mailto:emily.brown@example.com">Noah.johnson@gmail.com</a></p>
+            </div>
         </div>
 
-        <div class="committee-member">
-            <a href="HTML_assignment_about.html"><img src="Images/jack_mustache.jpg" alt="Member 2" class="member-photo"></a>
-            <h3>Public Relations:</h3>
-            <h3>John Smith</h3>
-            <p><a href="mailto:emily.brown@example.com">john.smith@gmail.com</a></p>
-        </div>
+        <form class="compquest" action="https://youtu.be/dQw4w9WgXcQ" method="get">
+            <h2>Questions and complaints:</h2>
+            <label for="name">First and Last name:</label>
+            <input type="text" id="name" name="name" required tabindex="8">
 
-        <div class="committee-member">
-            <a href="HTML_assignment_about.html"><img src="Images/jack_french.jpg" alt="Member 3" class="member-photo"></a>
-            <h3>Secretary:</h3>
-            <h3>Emma Davis</h3>
-            <p><a href="mailto:jane.smith@example.com">emma.davis@gmail.com</a></p>
-        </div>
+            <label for="emailq">Email:</label>
+            <input type="email" id="emailq" name="emailq" required tabindex="9">
 
-        <div class="committee-member">
-            <a href="HTML_assignment_about.html"><img src="Images/jackblack.jpg" alt="Member 4" class="member-photo"></a>
-            <h3>Treasurer:</h3>
-            <h3>Liam Wilson</h3>
-            <p><a href="mailto:emily.brown@example.com">liam.wilson@gmail.com</a></p>
-        </div>
+            <label for="phoneq">Phone Number:</label>
+            <input type="tel" id="phoneq" name="phoneq" required tabindex="10">
 
-        <div class="committee-member">
-            <a href="HTML_assignment_about.html"><img src="Images/jack_hat.jpg" alt="Member 5" class="member-photo"></a>
-            <h3>Event Coordinator:</h3>
-            <h3>Sophia Taylor</h3>
-            <p><a href="mailto:emily.brown@example.com">sophia.taylor@gmail.com</a></p>
-        </div>
+            <div class="flex-row">
+                    <label for="issue">Issue:</label>
+                    <select id="issue" name="issue" required tabindex="11">
+                        <option value="">Select issue</option>
+                        <option value="product">Staff Issue</option>
+                        <option value="service">Service Issue</option>
+                        <option value="billing">Billing Issue</option>
+                        <option value="other">Other</option>
+                    </select>
 
-        <div class="committee-member">
-            <a href="HTML_assignment_about.html"><img src="Images/jack_santa.jpg" alt="Member 6" class="member-photo"></a>
-            <h3>Armorer:</h3>
-            <h3>Noah Johnson</h3>
-            <p><a href="mailto:emily.brown@example.com">Noah.johnson@gmail.com</a></p>
-          </div>
-    </div>
+                    <label for="contact">Contact via:</label>
+                    <select id="contact" name="contact" required tabindex="12">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                    </select>
+            </div>
 
+            <label for="description">Your question or complaint:</label>
+            <textarea id="description" name="description" rows="4" required tabindex="13"></textarea>
 
-       
-    <form class="compquest" action="https://youtu.be/dQw4w9WgXcQ" method="get">
-        <h2>Questions and complaints:</h2>
-        <label for="name">First and Last name:</label>
-        <input type="text" id="name" name="name" required>
+            <button type="submit" tabindex="14">Submit</button>
+            <button type="reset" tabindex="15">Clear</button>
 
-        <label for="emailq">Email:</label>
-        <input type="email" id="emailq" name="emailq" required>
-
-        <label for="phoneq">Phone Number:</label>
-        <input type="tel" id="phoneq" name="phoneq" required>
-
-        <div class="flex-row">
-                <label for="issue">Issue:</label>
-                <select id="issue" name="issue" required>
-                    <option value="">Select issue</option>
-                    <option value="product">Staff Issue</option>
-                    <option value="service">Service Issue</option>
-                    <option value="billing">Billing Issue</option>
-                    <option value="other">Other</option>
-                </select>
-
-                <label for="contact">Contact via:</label>
-                <select id="contact" name="contact" required>
-                    <option value="email">Email</option>
-                    <option value="phone">Phone</option>
-                </select>
-        </div>
-
-        <label for="description">Your question or complaint:</label>
-        <textarea id="description" name="description" rows="4" required></textarea>
-
-        <button type="submit">Submit</button>
-        <button type="reset">Clear</button>
-
-    </form>
+        </form>
     </section>
     
     <!-- This is the footer, with four logos, and a link to the contact us page, email and instagram -->
