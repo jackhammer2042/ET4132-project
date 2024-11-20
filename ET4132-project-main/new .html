@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complaint Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: auto;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin: 5px 0;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Complaint Form</h2>
+
+  <form action="https://youtu.be/dQw4w9WgXcQ method="get">
+    
+    <!-- Personal Information Section -->
+    <div class="section">
+      <h3>Personal Information</h3>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <!-- Complaint Details Section -->
+    <div class="section">
+      <h3>Complaint Details</h3>
+      <label for="category">Category:</label>
+      <select id="category" name="category" required>
+        <option value="">Select a category</option>
+        <option value="product">staff Issue</option>
+        <option value="service">Service Issue</option>
+        <option value="billing">Billing Issue</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" rows="4" required></textarea>
+    </div>
+
+    <!-- Additional Information Section -->
+    <div class="section">
+      <h3>Additional Information</h3>
+      <label for="contact">Preferred Contact Method:</label>
+      <select id="contact" name="contact" required>
+        <option value="email">Email</option>
+        <option value="phone">Phone</option>
+      </select>
+
+      <label for="phone">Phone Number (optional):</label>
+      <input type="tel" id="phone" name="phone">
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit Complaint</button>
+  </form>
+
+</body>
+</html>

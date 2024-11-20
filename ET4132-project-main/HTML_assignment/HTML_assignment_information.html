@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-ie">
+<head>
+    <meta charset="utf-8" />
+    <title>UL Fencing Information Page</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="HTML_assignment_information.css"> 
+</head>
+<body>
+    <!-- This is the header, with the UL fencing logo to the left, and navigation bar to the right. Click on the logo to get home -->
+    <header>
+        <a href="HTML_assignment_home.html"><img class="logo"  src = "Images/logo.png" alt="UL Fencing Logo featuring a wolf with three different types of swords behind it."></a>
+        <nav>
+            <ul>
+                <li><a href="HTML_assignment_home.html"><img class="homeicon" src="Images/homeicon.png" alt="homeicon">Home</a></li>
+                <li><a href="HTML_assignment_information.html"><img class="infoicon" src="Images/infoicon.png" alt="infoicon">Information</a></li>
+                <li><a href="HTML_assignment_whatisfencing.html"><img class="swordicon" src="Images/swordicon.png" alt="swordicon">What is fencing?</a></li>
+                <li><a href="HTML_assignment_about.html"><img class="questionicon" src="Images/questionicon.png" alt="questionicon">About us</a></li>
+                <li><a href="HTML_assignment_contact.html"><img class="emailicon" src="Images/emailicon.png" alt="emailicon">Contact us</a></li>                
+            </ul>
+        </nav>
+    </header>
+
+    <!-- This is the main section for the information page, with a box of text for what, when, where and how to join.
+     It also has a calendar for trainings and tournaments, and a map and picture to the PESS builing where the trainings are -->
+    <section id="main">
+        <div class="infobody">
+            <div class="infotext">
+                <h1>Information</h1><br>
+                <h2>What?</h2>
+                <p>We are a club within UL wolfes for fencing. For any more information about fencing in general please refer to the <a class="infolink" href="HTML_assignment_whatisfencing.html">What is fecning?</a> page.</p><br>
+                
+                <h2>When?</h2>
+                <p>We train every tuesday and wednesday at 8:00 pm.</p><br>
+
+                <h2>Where?</h2>
+                <p>Join us in the PESS builing, in the gym hall. </p><br>
+
+                <h2>How to join?</h2>
+                <p>If you would like to sign up, please refer to the <a  class="infolink" href="HTML_assignment_contact.html">Contact us</a> page for the sign up form. There we also have you questions and complaints form for any questions or issues you may have.</p>
+            </div>
+
+            <div class="infocalendar">
+                <iframe class="calendar" src="https://calendar.google.com/calendar/embed?src=ulfencing0%40gmail.com&ctz=Europe%2FDublin" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+
+        <div class="map-pess">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2419.1916104920683!2d-8.567629999999994!3d52.6745776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b5e970a087b4b%3A0xf829a7a0734dbff7!2sPESS%20Building!5e0!3m2!1ssv!2sie!4v1731701110254!5m2!1ssv!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <img src="Images/pess.png" alt="PESS Builing" class="pess">
+        </div>
+    </section>   
+
+    <!-- This is the footer, with four logos, and a link to the contact us page, email and instagram -->
+    <footer>
+        <div class="footer-logo-section">
+            <img src="Images/logo.png" alt="UL Fencing Logo">
+            <img src="Images/UL-logo.png" alt="UL Logo">
+            <ul class="footer-links">                    
+                <li><img src="Images/fencing_ireland.png" alt="Fencing Ireland Logo"></li>
+                <li><h4>Fencing Ireland Insurance</h4></li>
+            </ul>
+            <img src="Images/ul_wolfes.png" alt="UL Wolfes Logo">   
+            <div class="contactinfo">             
+                <ul>
+                    <li><a class="contactlink" href="HTML_assignment_contact.html">Contact us</a></li>
+                    <li>Email: ul.fencing@gmail.com</li>
+                    <li>
+                        <div class="media">
+                            <span class="username">@ulfencingclub</span>
+                            <img class="instagram" src="Images/instagram.png" alt="Instagram">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html
